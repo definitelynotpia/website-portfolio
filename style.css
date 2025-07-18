@@ -1,0 +1,98 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	width: 100vw;
+	background: #fffcf5;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+	color: #1a4547 !important;
+}
+
+.page-container {
+	/* margin: auto; */
+	display: flex;
+	height: 90vh;
+	justify-content: center;
+}
+
+.page {
+	position: absolute;
+	border: 1px solid rgba(0, 0, 0, 0.331);
+	background: #fffcf556;
+	height: 85vh;
+	width: 96vw;
+	margin-top: 1vh;
+	border-radius: 10px;
+	padding: 0px 10px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.nav {
+	padding-top: 1vh;
+}
+
+.nav-link {
+	color: #1a4547 !important;
+	font-style: italic;
+	margin: 10px 10px;
+	padding: 2px 15px !important;
+	border: 1px solid rgba(0, 0, 0, 0.331) !important;
+	border-radius: 10px;
+}
+
+.nav-link.active {
+	color: black !important;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: bold;
+	transform: scale(1, 1.5);
+}
+
+/* blobs */
+
+.blob {
+	position: fixed;
+	border-radius: 50%;
+	filter: blur(100px);
+	mix-blend-mode: multiply;
+	animation: float 20s infinite ease-in-out;
+	z-index: -1;
+}
+
+.blob.yellow {
+	width: 30vw;
+	height: 55vh;
+	background: #ffffaf;
+	top: 0%;
+	left: 70%;
+}
+
+.blob.blue {
+	width: 50vw;
+	height: 100vh;
+	background: #bef7ff;
+	top: 50%;
+	left: -20%;
+	rotate: -45deg;
+}
+
+.blob.green {
+	width: 80vh;
+	height: 80vh;
+	background: #c1ffca;
+	top: -30%;
+	left: 20%;
+	rotate: 90deg;
+}
+
+.blob.pink {
+	width: 80vh;
+	height: 80vh;
+	background: #ffc5df;
+	top: 50%;
+	left: 50%;
+	rotate: 90deg;
+}
